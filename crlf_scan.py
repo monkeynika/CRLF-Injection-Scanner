@@ -20,7 +20,7 @@ PROTOCOL_LIST = ['http', 'https']
 APPEND_LIST = ["", "crlf", "?crlf=", "#"]
 
 # List of escape sequences that possibly result in crlf.
-ESCAPE_LIST = ['%0d','%0a', '%0d%0a', '%23%0d', '%23%0a', '%23%0d%0a']
+ESCAPE_LIST = ['%0d','%0a', '%0d%0a', '%23%0d', '%23%0a', '%23%0d%0a', '%25%30%61', '%%0a', '%25%30', '%250', '%25250', '%2e%2e%2f%0d%0a', '%2f%2e%2e%0d%0a', '%2F..%0d%0a', '%3f%0d%0a', '%3f%0d', '%u000a']
 
 # By default, the scanner will try to inject a Set-Cookie statment.
 DEFAULT_INJ = "Set-Cookie:param=crlf;"
